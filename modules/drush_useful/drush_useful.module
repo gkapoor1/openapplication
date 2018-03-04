@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * @ Module file for Drush Useful Module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function drush_useful_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.drush_useful':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Drush Useful provides various custom commands to speed up the development process. Currently it has various commands which install certain set of modules such as SEO, Optimisation and security etc. With the help of this module developers can install various important modules very quickly') . '</p>';
+      $output .= '<h3>' . t('Commands and Usage') . '</h3>';
+      $output .= '<p>' . t('<b>useful-developer-install(idev) :</b> Install all the important development modules such as Devel, Admin Toolbar etc.') . '</p>';
+      $output .= '<p>' . t('<b>useful-developer-uninstall(udev) :</b> Uninstall development modules such as Devel, Admin Toolbar etc and make website production ready.') . '</p>';
+      $output .= '<p>' . t('<b>useful-seo-install(iseo) :</b> Install all the modules related to SEO of the website such as Metatag, Simple Sitemap, Yoast SEO and Pathauto.') . '</p>';
+      $output .= '<p>' . t('<b>useful-seo-uninstall(useo) :</b> Uninstall all the SEO related modules. It can useful in some rare situation such as Testing, or making website.') . '</p>';
+      $output .= '<p>' . t('<b>useful-optimize-install(iopt) :</b> Install optimization related modules such as Redis, Advance aggregation, Fast 404 etc.') . '</p>';
+      $output .= '<p>' . t('<b>useful-optimize-uninstall(uopt) :</b> Uninstall optimization modules such as Redis, Advance aggregation, Fast 404 etc. Could be used in debugging and testing phase') . '</p>';
+      $output .= '<p>' . t('<b>useful-migration-install(imig) :</b> Install Migration Modules such as Migrate, Migrate Plus, Migrate Tools etc.') . '</p>';
+      $output .= '<p>' . t('<b>useful-migration-uninstall(umig) :</b> Uninstall Migration Modules such as Migrate, Migrate Plus, Migrate Tools etc. Could be useful when you have completed the migration and dont require these modules anymore.') . '</p>';
+      $output .= '<p>' . t('<b>useful-decoupled-install(idcoup) :</b> Install Modules such as RestAPI, REST UI, JSON API ,Basic Auth. Now you go headless in single Drush command') . '</p>';
+      $output .= '<p>' . t('<b>useful-decoupled-uninstall(udcoup) :</b> Uninstall Modules such as  RestAPI, REST UI, JSON API ,Basic Auth. Headless is not everyones cup of tea') . '</p>';
+      $output .= '<p>' . t('<b>useful-security-install(isec) :</b> Install Security related modules such as Captcha, Paranoia etc. Just to make you feel secure in a single Drush command.') . '</p>';
+      $output .= '<p>' . t('<b>useful-security-uninstall(usec) :</b> Uninstall Security related modules such as Captcha, Paranoia etc. Added this command for sake of completeness or maybe you might use to disable them while testing your website.') . '</p>';
+      $output .= '<p>' . t('<b>useful-search-install(isrch) :</b> Install Search enhancing modules such as Search API, Search API DB, Facets etc.') . '</p>';
+      $output .= '<p>' . t('<b>useful-search-uninstall(usrch) :</b> Uninstall Search enhancing modules such as Search API, Search API DB, Facets etc.') . '</p>';
+      $output .= '<p>' . t('<b>useful-social-install(isoc) :</b> Install social sharing modules like  AddToAny , Share This etc.') . '</p>';
+      $output .= '<p>' . t('<b>useful-social-install(usoc) :</b> Uninstall social sharing modules like  AddToAny , Share This etc.') . '</p>';
+      $output .= '<p>' . t('<b>useful-education-install(iedu) :</b> Install  modules like FAQ, Tour UI.') . '</p>';
+      $output .= '<p>' . t('<b>uuseful-education-uninstall(uedu) :</b> Uninstall  modules like  FAQ, Tour UI.') . '</p>';
+      $output .= '<p>' . t('<b>useful-advertise-install(iadv) :</b> Install  modules  like Google Adsense, DFP, Mail Chimp, Simple Ads etc.') . '</p>';
+      $output .= '<p>' . t('<b>useful-advertise-uninstall(uadv) :</b> Uninstall  modules  like  Google Adsense, DFP, Mail Chimp, Simple Ads etc.') . '</p>';
+      $output .= '<p>' . t('<b>useful-contentdisplay-install(icd) :</b> Install  modules like Views Slideshow, Views Accordion.') . '</p>';
+      $output .= '<p>' . t('<b>useful-contentdisplay-uninstall(ucd) :</b> Uninstall modules like Views Slideshow, Views Accordion.') . '</p>';
+      $output .= '<p>' . t('<b>useful-importexport-install(iimex) :</b> Install  modules  like Views Data Export, Content Import , Backup DB, Printable.') . '</p>';
+      $output .= '<p>' . t('<b>useful-importexport-uninstall(uimex) :</b> Uninstall  modules  like Views Data Export, Content Import , Backup DB, Printable') . '</p>';
+      return $output;
+  }
+}

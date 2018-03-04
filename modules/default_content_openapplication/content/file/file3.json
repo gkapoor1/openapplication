@@ -1,0 +1,86 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/inline-images\/Screen%20Shot%202018-03-04%20at%2011.49.01%20PM.png"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 3
+        }
+    ],
+    "uuid": [
+        {
+            "value": "3c065212-c8c1-4bd3-bb14-ba76143870e7"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "035bd0fa-375a-4dca-aad7-5803344111e2"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "Screen Shot 2018-03-04 at 11.49.01 PM.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "http:\/\/default\/sites\/default\/files\/inline-images\/Screen%20Shot%202018-03-04%20at%2011.49.01%20PM.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 12635
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-03-04T18:20:25+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-03-04T18:21:19+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

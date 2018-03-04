@@ -1,0 +1,6 @@
+<?php
+
+/**
+ * @file
+ * Installs default content when open application is installed.
+ */

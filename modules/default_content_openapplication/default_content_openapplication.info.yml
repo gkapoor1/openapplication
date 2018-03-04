@@ -1,0 +1,4 @@
+name: 'Default content for Open Application'
+type: module
+description: 'Imports default content when Open Application is installed'
+core: 8.x

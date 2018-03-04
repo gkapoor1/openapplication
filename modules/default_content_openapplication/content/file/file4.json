@@ -1,0 +1,86 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/inline-images\/dc-Cover-uouahgoa4cv684bk7gmjieo8a3-20171006144533.Medi_.jpeg"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 4
+        }
+    ],
+    "uuid": [
+        {
+            "value": "482351f6-14c0-4015-938f-dc4392244467"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "035bd0fa-375a-4dca-aad7-5803344111e2"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "dc-Cover-uouahgoa4cv684bk7gmjieo8a3-20171006144533.Medi_.jpeg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "http:\/\/default\/sites\/default\/files\/inline-images\/dc-Cover-uouahgoa4cv684bk7gmjieo8a3-20171006144533.Medi_.jpeg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 42622
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-03-04T18:24:40+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-03-04T18:24:59+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}
